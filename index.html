@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>demo</title>
+
+</head>
+
+<body>
+demo test1111
+
+<a href="index1.html">22222221</a>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+        // 开始注册service workers
+        navigator.serviceWorker.register('./sw-demo-cache.js', {
+            scope: './'
+        }).then(function (registration) {
+            console.log('注册成功');
+
+            
+        }).catch (function (error) {
+            console.log('注册没有成功');
+        });
+    }
+
+
+
+
+
+
+</script>
+</body>
+</html>
